@@ -5,13 +5,15 @@ M.Tech CSE, IIT Bombay · Mumbai, India
 I build evaluation tooling for AI coding agents: benchmark tasks with hidden tests, verifiers that check
 the physics instead of comparing against stored answers, and detectors for agents that pass their tests
 without solving the task. My M.Tech thesis was on automated verification and reward-hacking detection in
-multi-turn LLM reasoning pipelines, with Docker-based execution environments.
+multi-turn LLM reasoning pipelines, with Docker-based execution environments. I also build backend
+services where correctness matters more than features.
 
 ### Featured work
 
 | Repository | What it is |
 |---|---|
 | [**reward-hacking-detector**](https://github.com/ik-786/reward-hacking-detector) | Static, differential and trajectory checks that flag coding agents gaming their tests. Catches 48 of 48 template hacks and 7 of 8 held-out evasive hacks without flagging any honest solution. Pure Python, CI on 3 versions. |
+| [**ledger-service**](https://github.com/ik-786/ledger-service) | Double-entry ledger HTTP service: transfers, card-style holds, reversals and idempotent writes on SQLite. Concurrency, model-based and audit tests; 615 requests/s at p99 71 ms with 32 clients fighting over the same accounts, and the books still balance. |
 | [**terminal-bench-engineering-tasks**](https://github.com/ik-786/terminal-bench-engineering-tasks) | Terminal-Bench / Harbor tasks from electrical, civil and aerospace engineering: AC power flow, truss analysis and multi-revolution Lambert. The verifiers check the governing equations, and all 19 deliberately wrong solutions score 0. |
 | [**semi-batch-reactor-safety-control**](https://github.com/ik-786/semi-batch-reactor-safety-control) | Terminal-Bench task in chemical process control: finish an exothermic semi-batch reaction as fast as possible without crossing the safety limit, under faults the agent is not told about. |
 
@@ -23,7 +25,7 @@ questions with independently checked answers.
 
 ### Tools
 
-Python · SQL · C++ · Bash · Docker · pytest · NumPy · pandas · scikit-learn
+Python · SQL · C++ · Bash · Docker · SQLite · pytest · NumPy · pandas · scikit-learn
 
 ### Contact
 
